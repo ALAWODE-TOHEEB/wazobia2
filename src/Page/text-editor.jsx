@@ -143,12 +143,13 @@ const TextEditor = () => {
   };
 
   return (
-    <Box backgroundColor={"#FAFAFA"} width={"100%"}>
+    <Box backgroundColor={"#FAFAFA"} width={"100%"} mb={"0"}>
       <Box
         borderColor={"#E7F1E9"}
         borderWidth={1}
         width={"2xl"}
-        marginY={"24"}
+        marginTop={"20"}
+        marginBottom={"5"}
         borderRadius={3}
         style={{ minHeight: "700px" }}
         marginX={"auto"}
@@ -387,6 +388,11 @@ const TextEditor = () => {
           </Box>
         )}
       </Box>
+
+      <Box alignItems="end" Box w={"75%"} position={"relative"} paddingBottom={2} right={-20} >
+      <Button onPress={() => console.log("hello world")} size="lg" width={100}  backgroundColor="green.500">Post</Button>
+    </Box>
+      
     </Box>
   );
 };
